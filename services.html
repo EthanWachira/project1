@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Our Services</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,49 +32,35 @@
 
     <main class="container mt-4">
         <h2>Our Services</h2>
-        <table class="table table-bordered">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Service</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Web Development</td>
-                    <td>Creating responsive and robust web applications.</td>
-                    <td>$1000</td>
-                </tr>
-                <tr>
-                    <td>Mobile App Development</td>
-                    <td>Building native and cross-platform mobile apps.</td>
-                    <td>$2000</td>
-                </tr>
-                <tr>
-                    <td>Cloud Solutions</td>
-                    <td>Providing scalable and secure cloud infrastructure.</td>
-                    <td>$1500</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>Add a New Service</h3>
-        <form id="serviceForm">
-            <div class="form-group">
-                <label for="service">Service</label>
-                <input type="text" class="form-control" id="service" name="service" required>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="service1.jpg" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">We offer state-of-the-art web development services to build dynamic and responsive websites.</p>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="description">Description</label>
-                <textarea class="form-control" id="description" name="description" required></textarea>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="service2.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">App Development</h5>
+                        <p class="card-text">Our team excels in creating user-friendly mobile applications for both Android and iOS platforms.</p>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="price">Price</label>
-                <input type="number" class="form-control" id="price" name="price" required>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="service3.jpg" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO Optimization</h5>
+                        <p class="card-text">Enhance your online presence and boost your search engine rankings with our expert SEO services.</p>
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Add Service</button>
-        </form>
+        </div>
     </main>
 
     <footer>
@@ -87,3 +72,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
