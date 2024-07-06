@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Innovators - Home</title>
+    <title>Services</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,21 +32,50 @@
     </header>
 
     <main class="container mt-4">
-        <div class="hero">
-            <h1>Welcome to Tech Innovators</h1>
-            <p>Your trusted partner in technology solutions.</p>
-        </div>
+        <h2>Our Services</h2>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>Creating responsive and robust web applications.</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Mobile App Development</td>
+                    <td>Building native and cross-platform mobile apps.</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Cloud Solutions</td>
+                    <td>Providing scalable and secure cloud infrastructure.</td>
+                    <td>$1500</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Our Mission</h2>
-                <p>To provide innovative technology solutions that enhance business efficiency and drive growth.</p>
+        <h3>Add a New Service</h3>
+        <form id="serviceForm">
+            <div class="form-group">
+                <label for="service">Service</label>
+                <input type="text" class="form-control" id="service" name="service" required>
             </div>
-            <div class="col-md-6">
-                <h2>Our Vision</h2>
-                <p>To be the leading technology solutions provider known for excellence, innovation, and customer satisfaction.</p>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" name="description" required></textarea>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" name="price" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Service</button>
+        </form>
     </main>
 
     <footer>
